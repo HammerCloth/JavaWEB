@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>garmmer</title>
+<!--    写在style标签中-->
+
+    <style type="text/css">
+        /*css注释*/
+        /*选择器{
+            这里定义要改变的样式
+            样式名：样式值；
+            样式名：样式值；
+        }
+        */
+        p{
+            color: aqua;
+            font-size: 20px;
+            font-family: "Brush Script MT";
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="basic.css">
+</head>
+<body>
+<!--如果有样式重叠，会优先选择最近的样式-->
+<!--    1.  样式直接写在标签的style属性：不能复用，不能编写大量的样式-->
+    <p style="color: brown">秋水共长天一色</p>
+<!--    2. 写在style标签中-->
+    <p>秋水共长天一色</p>
+<!--    3. 通过引入外部文件的方式编写样式-->
+    <p>秋水共长天一色</p>
+</body>
+</html>

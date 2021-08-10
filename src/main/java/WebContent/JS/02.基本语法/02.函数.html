@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+  <script type="text/javascript">
+      //01.声明函数 方法不管在哪里声明，浏览器都会优先加载。但是变量必须先申明后使用
+      // function 方法名（参数名，参数名）{方法体}
+      function sum(a,b){
+          alert(a+b);
+      }
+      //将方法赋值给变量，方法也是对象,方法名就是变量名。
+      var sum2 = function (a,b){
+          alert(a+b);
+      }
+      //02.调用函数 方法名（参数）；在js中方法的唯一标示就是方法名，没有方法重载这一说。调用方法的时候是可以选择是否传递
+      sum2(1,1);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

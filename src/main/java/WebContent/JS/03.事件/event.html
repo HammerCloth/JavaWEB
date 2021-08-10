@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event</title>
+    <script type="text/javascript">
+        //浏览器加载完成整个页面的时候，调用后面的方法
+        window.onload = function (){
+            var button = document.getElementById("ssss");
+            button.onclick = function (){
+                alert('HELLO');
+            };
+        }
+    </script>
+</head>
+<body>
+<!--在标签的事件属性中写js代码-->
+<button id="btnid" onclick="alert('HELLO')">SAY HELLO</button>
+<!--动态的为元素绑定事件-->
+<!--1.找到元素-->
+<!--2.为元素相应的事件属性赋值一个方法-->
+<button id="ssss">click</button>
+</body>
+</html>

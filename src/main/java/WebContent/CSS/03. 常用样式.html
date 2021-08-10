@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用样式</title>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        div{
+            border: 20px solid darkblue;
+            /*width: 100px;*/
+            /*height: 100px;*/
+            width: 50%;
+            height: 100px;
+            background-color: aqua;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        table,tr,td,th{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        ul,ol{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<!--div 其实就是一个小长方形 div里面经常放一些元素， div+css可以给网页布局-->
+<div>
+    hello
+    hello
+</div>
+<a href="01.css基本语法.html">link</a>
+<table>
+    <tr>
+        <th>姓名</th><th>性别</th><th>爱好</th>
+    </tr>
+    <tr>
+        <td colspan="2">小王</td><td rowspan="2">球</td>
+    </tr>
+    <tr>
+        <td>小王</td><td>男</td>
+    </tr>
+</table>
+<!--无序列表-->
+<ul>
+    <li>first</li>
+    <li>second</li>
+</ul>
+<!--有序列表-->
+<ol start="5">
+    <li>first</li>
+    <li>second</li>
+</ol>
+</body>
+</html>

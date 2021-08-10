@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>核心函数</title>
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript">
+      // 传入参数为函数是，文档加载完成执行此方法
+      $(function (){
+        // 传入参数为HTML字符串，根据字符串创建节点对象
+        $("<li>jquery<li>").appendTo("#ul");
+        // 传入参数为选择器字符串，根据选择器查找出元素节点对象
+        $(".a").click(function (){
+          alert("tiaozhuan");
+        });
+        // 传入参数为DOM对象，将DOM对象包装为jquery对象返回，
+        // 原生js查找出来的对象就是DOM对象，
+        // 使用jquery查找出来的对象就是jquery对象
+        // 两种对象操作彼此的方法需要转换
+        var ele = $(document.getElementsByClassName("a"));
+        var ekl = $(".a")[0];//jQuery转化成DOM对象，jquery对象内部其实是一个dom数组
+      });
+    </script>
+</head>
+<body>
+<ul id="ul">
+  <li>xiangjiao</li>
+</ul>
+<a href="01.helloword.html" class="a">nihao</a>
+</body>
+</html>

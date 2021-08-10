@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<!--表单的功能就是将信息提交给服务器，类似服务器的搜索框-->
+<!--数据一般就是用户填写的-->
+<!--form 来定义一个表单-->
+<!--mothed 定义提交的方式-->
+<!--get：数据使用键值的方式追加到地址栏上-->
+<!--post：不会追加到地址栏上，放在请求体里面-->
+<!--action 代表要提交到的地方（资源路径）-->
+<!--表单将用户输入的内容使用键值对的方式提交，表单提交时多个表单项键值对使用&符号链接-->
+<!--input 定义表单项-->
+<!--    text 文本框-->
+<!--    submit 提交按钮-->
+<!--    password 密码-->
+<!--    name 定义表单项的键名-->
+<!--    value 定义表单项的值-->
+<!--    radio 定义一个单选按钮 需要将name属性设置为相同才能设置为单选，用户不输入值的表单项需要我们来定义值-->
+<!--    checkbox 定义一个多选框 需要将name属性设置为相同 用户不输入值的表单项需要我们来定义值-->
+<!--select 定义一个下拉列表，还需要option定义选项-->
+<form action="target.html" method="post">
+    用户名:<input type="text" name="username"/><br/>
+    密码：<input type="password" name="pwd"/><br/>
+    性别：男<input type="radio" name="sex" value="1"/> 女<input type="radio" name="sex" value="0"/><br/>
+    爱好：香蕉<input type="checkbox" name="fav" value="1"><br/>
+    香蕉2<input type="checkbox" name="fav" value="2"><br/>
+    香蕉3<input type="checkbox" name="fav" value="3"><br/>
+    老师：<select NAME="TEACHER">
+    <option VALUE="liu">liu</option>
+    <option VALUE="key">key</option>
+    <option VALUE="ni">ni</option>
+    </select>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>

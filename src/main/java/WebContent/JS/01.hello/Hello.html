@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+<!--    js是运行在浏览器端的脚本语言-->
+<!--    需要在script标签中编写js代码-->
+    <script type="text/javascript">
+        //js代码
+        // 调用这个对象的属性 ，为onload属性赋值，这个值还是个方法
+        window.onload = function (){
+            // 调用document的getElementById的方法，把返回值赋值给了btn
+            var btn = document.getElementById("btnId");
+            // 为btn的属性赋值，这个值还是个方法
+            btn.onclick = function (){
+                alert("hello")
+            };
+        };
+    </script>
+</head>
+<body>
+<button id="btnId">say Hello</button>
+</body>
+</html>

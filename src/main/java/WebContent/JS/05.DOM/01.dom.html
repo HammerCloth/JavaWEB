@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom</title>
+    <script type="text/javascript">
+        window.onload = function (){
+            var a = document.getElementById("a");
+            // alert(a.href.nodeName);
+            // alert(a.href.nodeType);
+            // alert(a.href.nodeValue);
+            var att = a.getAttributeNode("id");
+            // alert(att.nodeName);
+            // alert(att.nodeType);
+            // alert(att.nodeValue);
+            var text1 = a.firstChild;
+            alert(text1.nodeName);
+            alert(text1.nodeType);
+            alert(text1.nodeValue);
+        }
+    </script>
+</head>
+<body>
+用户始终都操作对象
+dom:文档对象模型， 浏览器把整个页面抽象成一个document对象，包括页面里面的所有元素
+bom:浏览器对象模型，把浏览器业封装成对象
+js内置的对象，例如math，date
+
+dom模型是一个树形模型，把文档抽象成一棵树
+节点：每一个元素都是一个节点
+父节点：
+祖先节点：
+子节点：
+后代节点：
+兄弟节点：
+节点分为三类：元素节点，属性节点（元素的属性，不是节点的属性），文本节点
+所有的节点都有三个属性：Nodename（节点名），nodeType（节点类型），nodeValue（节点值）
+元素节点             标签名                 1                   null
+属性节点             属性名                 2                   属性值
+文本节点             #text                 3                   文本值
+<a id="a" href="01.dom.html">link</a>
+</body>
+</html>

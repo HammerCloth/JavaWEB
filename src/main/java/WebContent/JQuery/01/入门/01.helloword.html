@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>helloworld</title>
+<!--    <script type="text/javascript">-->
+<!--        window.onload = function (){-->
+<!--            var but =document.getElementById("buttons");-->
+<!--            but.onclick = function (){-->
+<!--                alert("hello");-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+<!--    jquery 是js的第三方库-->
+<!--    封装了js的操作-->
+<!--    使用jquery必须先引用jquery的库文件-->
+    <script type="text/javascript" src=""></script>
+    <script type="text/javascript">
+        //新开一个标签写代码
+        //$():jq的核心函数
+        //为$()传入一个function（）{}作为参数：就相当于windows.onload()=function(){}
+        // 使用$()来查找元素，使用.click来绑定单击响应函数，把响应函数作为click（）方法的参数传入即可
+        $(function (){
+            $("#btn").click(function (){
+                alert($);
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="btn">say hello</button>
+</body>
+</html>

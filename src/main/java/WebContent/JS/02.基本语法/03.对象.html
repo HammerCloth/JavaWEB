@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+    <script type="text/javascript">
+        //创建对象的两种方式
+        //第一种方式
+        var object = new Object();
+        //第二种方式
+        var obj = {};
+        // 动态的向对象添加属性
+        obj.name = "aaa";
+        obj.work = function () {
+            alert("work");
+        };
+        //获取属性值
+        alert(obj.name);
+        //调用方法
+        obj.work();
+        //在声明的时候就给对象添加属性和方法
+        var obj3 = {name:"syx",age:function (){
+             alert("18");
+            }}
+        obj3.age();
+        for (let i = 0; i < 10; i++) {
+            alert(i)
+        }
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

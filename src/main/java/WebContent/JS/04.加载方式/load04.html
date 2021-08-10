@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+1. 写在标签的事件属性里面，不推荐
+2. 写在script标签里面
+        1. head里面
+            如果不同window.onload，会出现找不到元素
+        2. 写在body之前
+            资源加载时间长的话，js可能获取不到正确的属性。
+3. 引入外部文件
+<button id="ssss">click</button>
+<script type="text/javascript">
+    window.onload = function (){
+        var button = document.getElementById("ssss");
+        button.onclick = function (){
+            alert('HELLO');
+        };
+    }
+</script>
+</body>
+</html>
